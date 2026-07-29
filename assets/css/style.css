@@ -354,6 +354,31 @@ body {
     font-style: italic;
 }
 
+.hotel-block {
+    margin: 1.75rem 0 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.hotel-block:last-child {
+    border-bottom: none;
+}
+
+.hotel-block h4 {
+    margin: 0 0 0.6rem;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+}
+
+.hotel-block p {
+    margin: 0.25rem 0;
+    font-size: 1.02rem;
+}
+
+.hotel-block a {
+    color: #1155cc;
+}
+
 /* Venue map (clickable) */
 .venue-map-link {
     display: inline-block;
