@@ -354,29 +354,124 @@ body {
     font-style: italic;
 }
 
-.hotel-block {
-    margin: 1.75rem 0 2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+/* MSML2025-style venue page */
+.page-banner {
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
 }
 
-.hotel-block:last-child {
-    border-bottom: none;
+.page-banner-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
-.hotel-block h4 {
-    margin: 0 0 0.6rem;
+.page-banner-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-banner-bg .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 30, 30, 0.45);
+}
+
+.page-banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-banner-title {
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.venue-copy {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.venue-copy p {
+    margin-bottom: 1.25rem;
+    font-size: 1.2rem;
+    line-height: 1.85;
+    color: #222;
+}
+
+.venue-subhead {
+    margin: 0 0 1rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.venue-label {
+    font-size: 1.15rem !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem !important;
+}
+
+.venue-district {
+    margin: 2rem 0 1rem !important;
+    font-size: 1.15rem !important;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.district-list {
+    list-style: square;
+    padding-left: 1.5rem;
+    margin: 0 0 1.5rem;
+    text-align: left;
+}
+
+.district-list li {
+    font-size: 1.2rem;
+    line-height: 1.85;
+    color: #222;
+    margin-bottom: 0.75rem;
+}
+
+.hotel-list {
+    list-style: square;
+    padding-left: 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.hotel-list li {
+    margin-bottom: 1.6rem;
     font-size: 1.15rem;
-    color: var(--primary-color);
+    line-height: 1.75;
+    color: #222;
 }
 
-.hotel-block p {
-    margin: 0.25rem 0;
-    font-size: 1.02rem;
+.hotel-list strong {
+    font-weight: 700;
+    font-size: 1.18rem;
 }
 
-.hotel-block a {
+.hotel-list a {
     color: #1155cc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.hotel-list a:hover {
+    color: var(--primary-color);
 }
 
 /* Venue map (clickable) */
@@ -384,9 +479,7 @@ body {
     display: inline-block;
     max-width: 100%;
     cursor: pointer;
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 .venue-map-link:hover {
