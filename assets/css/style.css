@@ -439,17 +439,14 @@ body {
 }
 
 .venue-subhead {
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.75rem;
     font-size: 1.35rem;
     font-weight: 700;
     color: #222;
 }
 
-.venue-building {
-    margin: 0 0 1.25rem !important;
-    font-size: 1.2rem;
-    line-height: 1.85;
-    color: #222;
+.venue-subhead + .venue-subhead {
+    margin-bottom: 1.25rem;
 }
 
 .venue-label {
