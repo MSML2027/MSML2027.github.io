@@ -454,14 +454,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.08em;
     margin-bottom: 0.9rem !important;
-    text-align: center;
-}
-
-.venue-accommodation-intro {
-    text-align: center;
-    max-width: 900px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    text-align: left;
 }
 
 .venue-district {
