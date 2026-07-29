@@ -1,8 +1,8 @@
 # Site settings
 title: MSML 2027
 description: 6th MSML International Conference - Mathematical theory and algorithms of machine learning
-url: "https://yiweimeng.github.io"
-baseurl: "/MSML2027"
+url: "https://msml2027.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
