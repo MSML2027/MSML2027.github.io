@@ -1,10 +1,12 @@
 # Conference Basic Information
-name: "19th EASIAM Annual Meeting"
-short_name: "EASIAM 2026"
-dates: "August 23-27, 2026"
-venue: "Oriental Hotel, Jeju Island, Korea"
-location: "Jeju Island, Korea"
-email: "easiam2026@gmail.com"
+name: "MSML 2027"
+short_name: "MSML 2027"
+dates: "To be announced"
+venue: "To be announced"
+location: "To be announced"
+email: "TBD"
 
 # About
-about: "The 19th East Asia SIAM (EASIAM) Annual Meeting brings together researchers, educators, and students in the field of industrial and applied mathematics from East and Southeast Asia. The conference provides a forum for the exchange of ideas and the presentation of recent results in all areas of applied mathematics."
+about: "MSML2027 is the sixth edition of a recently established international conference, emphasizing the study of mathematical theory and algorithms of machine learning, together with applications in scientific computing and engineering disciplines."
+
+themes: 'New themes of the conference will include <strong>agentic scientific computing, with an emphasis on the mathematical and information-theoretic foundations of agent-based AI systems embedded in scientific and engineering workflows; the analysis of in-context learning, foundation models, automated reasoning, and optimization</strong>; and other themes such as neural operators, transformers, state-space models, causal inference, optimal transport, graph neural networks, and the broader mathematics of machine learning.'

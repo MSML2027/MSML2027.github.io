@@ -1,13 +1,27 @@
 ---
 layout: default
-title: Venue
+title: Venue & Accommodation
 ---
 
-<main class="container" style="padding: 60px 0;">
-    <h2 id="venue" style="margin-bottom:40px; color:var(--primary-color);">Venue</h2>
-    <h3>Oriental Hotel, Jeju Island, Korea</h3>
-    <div
-        style="background:#eee; height:300px; display:flex; align-items:center; justify-content:center; margin-top:20px;">
-        [Hotel Map Image Placeholder]
+<section class="section band--muted">
+    <div class="container page-copy">
+        <h1 class="page-title">Venue and Hotels</h1>
+        <h3 class="committee-heading">Venue: {{ site.data.conference.venue }}</h3>
+        <p>Location details and travel information will be updated soon.</p>
     </div>
-</main>
+</section>
+
+<section class="section band--slate-soft">
+    <div class="container">
+        <a href="https://www.google.com/maps/search/%E4%B8%8A%E6%B5%B7" target="_blank" rel="noopener noreferrer" class="venue-map-link" title="Open Shanghai on Google Maps">
+            <img src="{{ '/assets/images/map_shanghai.png' | relative_url }}" alt="Shanghai on Google Maps" class="venue-map-img">
+        </a>
+    </div>
+</section>
+
+<section class="section band--muted">
+    <div class="container page-copy">
+        <h2 class="committee-heading">Accommodation</h2>
+        <p>Hotel recommendations will be posted closer to the conference dates. We kindly suggest booking in advance.</p>
+    </div>
+</section>

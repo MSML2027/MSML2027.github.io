@@ -5,7 +5,7 @@ title: Home
 
 <header class="hero">
     <div class="hero-bg">
-        <img src="{{ '/assets/images/bg_jeju.png' | relative_url }}" alt="Jeju Island">
+        <img src="{{ '/assets/images/bg.png' | relative_url }}" alt="MSML 2027">
         <div class="overlay"></div>
     </div>
     <div class="container">
@@ -14,31 +14,52 @@ title: Home
     </div>
 </header>
 
-<section id="about" class="section">
-    <div class="container">
-        <h2 class="section-title">About EASIAM 2026</h2>
+<section class="section band--muted">
+    <div class="container home-copy home-copy--center">
         <p>{{ site.data.conference.about }}</p>
+        <p>{{ site.data.conference.themes }}</p>
     </div>
 </section>
 
-<section id="dates" class="section">
-    <div class="container">
-        <h2 class="section-title">Important Dates</h2>
-        <ul class="date-list">
-            {% for date in site.data.dates %}
+<section class="section band--slate">
+    <div class="container home-copy home-copy--left">
+        <h3 class="committee-heading">Members of the International Organizing Committee:</h3>
+        <ul class="committee-list">
+            {% for member in site.data.committees.international_organizing %}
             <li>
-                <strong>{{ date.name }}{% if date.subtitle %}<br>
-                    <span style="font-size: 0.9em; font-weight: normal;">{{ date.subtitle }}</span>{% endif %}:</strong>
-                <span>{{ date.date }}</span>
+                {% if member.url %}<a href="{{ member.url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+                ({% if member.role %}<em>{{ member.role }}</em>, {% endif %}{{ member.affiliation }})
             </li>
             {% endfor %}
         </ul>
     </div>
 </section>
 
-<section id="sponsors" class="sponsors-section">
+<section class="section band--slate-soft">
+    <div class="container home-copy home-copy--left">
+        <h3 class="committee-heading">Members of the Local Organizing Committee:</h3>
+        <ul class="committee-list">
+            {% for member in site.data.committees.local_organizing %}
+            <li>
+                {% if member.url %}<a href="{{ member.url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+                ({{ member.affiliation }})
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section id="venue-map" class="section section--compact band--white">
     <div class="container">
-        <h2 class="section-title">Organizers</h2>
+        <a href="https://www.google.com/maps/search/%E4%B8%8A%E6%B5%B7" target="_blank" rel="noopener noreferrer" class="venue-map-link" title="Open Shanghai on Google Maps">
+            <img src="{{ '/assets/images/map_shanghai.png' | relative_url }}" alt="Shanghai on Google Maps" class="venue-map-img">
+        </a>
+    </div>
+</section>
+
+<section id="sponsors" class="section band--muted">
+    <div class="container">
+        <h2 class="section-title">We are thankful to our sponsors</h2>
         <div class="sponsors-grid">
             {% for org in site.data.organizers %}
             <div class="sponsor-item">
