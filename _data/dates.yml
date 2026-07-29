@@ -1,15 +1,9 @@
-- name: "Minisymposium Proposals Deadline"
-  date: "TBD"
-
-- name: "Notification of Minisymposium Acceptance"
-  date: "TBD"
-
 - name: "Abstract Submission Deadline"
-  subtitle: "(Minisymposium, Contributed Talks, and Posters)"
+  subtitle: "(Contributed Talks and Posters)"
   date: "TBD"
 
 - name: "Notification of Abstract Acceptance"
-  subtitle: "(Contributed Talks, and Posters)"
+  subtitle: "(Contributed Talks and Posters)"
   date: "TBD"
 
 - name: "Early Bird Registration Deadline"
