@@ -286,6 +286,28 @@ body {
     color: var(--primary-color);
 }
 
+.speaker-list {
+    padding-left: 2rem;
+}
+
+.speaker-list li {
+    margin-bottom: 1.25rem;
+    padding-left: 0.35rem;
+}
+
+.speaker-list strong,
+.speaker-list span {
+    display: block;
+}
+
+.speaker-list strong {
+    color: var(--primary-color);
+}
+
+.speaker-list span {
+    margin-top: 0.15rem;
+}
+
 .section-heading {
     font-size: 1.5rem;
     font-weight: 700;
