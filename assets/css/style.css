@@ -322,13 +322,16 @@ body {
 
 .speaker-name {
     font-weight: 600;
+}
+
+.speaker-name[href] {
     color: #1f4f73;
     text-decoration: underline;
     text-underline-offset: 0.12em;
 }
 
-.speaker-name:hover,
-.speaker-name:focus {
+.speaker-name[href]:hover,
+.speaker-name[href]:focus {
     color: var(--primary-color);
 }
 
