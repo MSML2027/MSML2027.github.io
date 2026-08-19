@@ -322,6 +322,14 @@ body {
 
 .speaker-name {
     font-weight: 600;
+    color: #1f4f73;
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
+
+.speaker-name:hover,
+.speaker-name:focus {
+    color: var(--primary-color);
 }
 
 .speaker-affiliation {
