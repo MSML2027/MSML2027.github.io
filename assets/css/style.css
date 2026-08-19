@@ -286,26 +286,44 @@ body {
     color: var(--primary-color);
 }
 
+.speaker-page {
+    max-width: 960px;
+    text-align: left;
+}
+
+.speaker-intro {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
 .speaker-list {
     padding-left: 2rem;
 }
 
 .speaker-list li {
-    margin-bottom: 1.25rem;
-    padding-left: 0.35rem;
+    margin-bottom: 1.15rem;
+    padding-left: 0.2rem;
+    font-size: 1rem;
+    line-height: 1.65;
 }
 
-.speaker-list strong,
-.speaker-list span {
+.speaker-name {
+    font-weight: 600;
+}
+
+.speaker-affiliation {
+    color: #555555;
+}
+
+.speaker-title {
     display: block;
+    margin-top: 0.1rem;
+    color: #333333;
 }
 
-.speaker-list strong {
-    color: var(--primary-color);
-}
-
-.speaker-list span {
-    margin-top: 0.15rem;
+.speaker-title + .speaker-title {
+    margin-top: 0.25rem;
 }
 
 .section-heading {
