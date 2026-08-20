@@ -170,9 +170,11 @@ body {
     object-position: center center;
 }
 
-/* 灰色遮罩已去掉，若需恢复可取消下一行注释 */
+/* Subtle overlay keeps white hero text readable across the image. */
 .hero-bg .overlay {
-    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.22);
 }
 
 .hero .container {
@@ -190,7 +192,7 @@ body {
 .hero h2 {
     color: #ffffff;
     font-weight: 800;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
 }
 
 .hero h1 {
