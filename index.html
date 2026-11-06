@@ -37,6 +37,20 @@ title: Home
 
 <section class="section band--slate-soft">
     <div class="container home-copy home-copy--left">
+        <h3 class="committee-heading">Members of the International Scientific Committee:</h3>
+        <ul class="committee-list">
+            {% for member in site.data.committees.international_scientific %}
+            <li>
+                {% if member.url %}<a href="{{ member.url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+                ({{ member.affiliation }})
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<section class="section band--slate">
+    <div class="container home-copy home-copy--left">
         <h3 class="committee-heading">Members of the Local Organizing Committee:</h3>
         <ul class="committee-list">
             {% for member in site.data.committees.local_organizing %}
