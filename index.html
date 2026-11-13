@@ -70,16 +70,3 @@ title: Home
         </a>
     </div>
 </section>
-
-<section id="sponsors" class="section band--muted">
-    <div class="container">
-        <h2 class="section-title">We are thankful to our sponsors</h2>
-        <div class="sponsors-grid">
-            {% for org in site.data.organizers %}
-            <div class="sponsor-item">
-                <img src="{{ '/assets/images/' | append: org.logo | relative_url }}" alt="{{ org.alt }}">
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
