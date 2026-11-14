@@ -578,22 +578,12 @@ body {
     color: var(--primary-color);
 }
 
-/* Venue map (clickable) */
-.venue-map-link {
-    display: inline-block;
-    max-width: 100%;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.venue-map-link:hover {
-    opacity: 0.92;
-}
-
 .venue-map-img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
     height: auto;
+    margin: 0 auto;
     vertical-align: middle;
 }
 
