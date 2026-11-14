@@ -578,13 +578,30 @@ body {
     color: var(--primary-color);
 }
 
+.venue-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .venue-map-img {
     display: block;
     width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin: 0 auto;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
     vertical-align: middle;
+}
+
+.venue-map-img--fengxian {
+    object-position: 60% center;
+}
+
+@media (max-width: 768px) {
+    .venue-image-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .venue-map-hint {
